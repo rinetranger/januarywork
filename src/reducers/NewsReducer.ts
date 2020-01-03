@@ -1,5 +1,6 @@
 import { reducerWithInitialState } from "typescript-fsa-reducers";
-import * as Actions from '../actions'
+import moment from 'moment'; 
+import * as Actions from '../actions';
 
 export interface INews {
     title: string
@@ -14,7 +15,13 @@ export interface INewsReducer {
 }
 
 const initialState: INewsReducer = {
-    news: []
+    news: [{
+        title: 'test',
+        date: moment().unix(),
+        place: 'test_place',
+        content: 'test_content',
+        img: 'test',
+    }]
 };
 
 
