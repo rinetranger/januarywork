@@ -17,7 +17,13 @@
     "resolveJsonModule": true,
     "isolatedModules": true,
     "noEmit": true,
-    "jsx": "react"
+    "jsx": "react",
+    "strictNullChecks": true,
+    "sourceMap": true,
+    "baseUrl": "./",
+    "paths": { "*": ["src/typings/*"] },
+    "typeRoots": ["src/typings", "node_modules/@types"],
+    "experimentalDecorators": true
   },
   "include": [
     "src"
